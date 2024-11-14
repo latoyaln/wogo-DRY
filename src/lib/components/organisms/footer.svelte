@@ -11,7 +11,25 @@
   <!-- NIEUWSBRIEF -->
   <form>
     <legend>{footerItems[0].newsletterTitle}</legend>
-    <p>Meld u aan om onze nieuwsbrief voor al het laatste nieuws, bars en evenementen</p>
+    <p>{footerItems[0].newsLetterDescription}</p>
+    <label>
+      Email* <!-- wordt nog dynamisch -->
+      <input
+        type="email"
+        name="email"
+        placeholder={footerItems[0].placeholderText}
+        required
+      />
+      <Button
+        type="submit"
+        variant="primary"
+        title="Subscribe"
+        icon={ArrowRight}
+        iconColor="var(--btn-primary-text-clr)"
+        size="sm"
+      />
+    </label>
+        
   </form>
 
   <!-- Navigatie -->
