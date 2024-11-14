@@ -20,16 +20,15 @@
         placeholder={footerItems[0].placeholderText}
         required
       />
-      <Button
-        type="submit"
-        variant="primary"
-        title="Subscribe"
-        icon={ArrowRight}
-        iconColor="var(--btn-primary-text-clr)"
-        size="sm"
-      />
     </label>
-        
+    <Button
+      type="submit"
+      variant="primary"
+      title="Subscribe"
+      icon={ArrowRight}
+      iconColor="var(--btn-primary-text-clr)"
+      size="sm"
+    />
   </form>
 
   <!-- Navigatie -->
@@ -81,8 +80,9 @@
 
   <!-- COPYRIGHT -->
   <div>
+    <!-- moet later dynamische content zijn in contentful -->
     <p><small>© 2024 WOGO Amsterdam. Alle rechten voorbehouden.</small></p>
-    <img src="" alt="nix 18">
+    <img src="/2a3b9e_c62852e7512143168afec041916d1f9d~mv2.png.webp" height="26" width="100"  alt="nix 18"> 
   </div>
 </footer>
 
