@@ -45,6 +45,17 @@
         </li>
       {/each}
     </ul>
+
+    <ul>
+      <h4>Review ons</h4><!-- moet later dynamische content zijn in contentful -->
+      <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d25182767-Reviews-Cocktail_Walk-Amsterdam_North_Holland_Province.html">
+        Tripadvisor
+      </a>
+      <a href="https://uk.trustpilot.com/review/wogoamsterdam.com?utm_medium=trustbox&utm_source=TrustBoxReviewCollector">
+        Trustpilot
+      </a>
+      <!-- moet later dynamische content zijn in contentful -->
+    </ul>
     
   </nav>
 
