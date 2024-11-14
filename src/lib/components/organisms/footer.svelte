@@ -4,6 +4,59 @@
   export let footerItems
 </script>
 
+<footer>
+  <!-- LOGO -->
+  <img src={logo} height="50" width="50" alt="Ga naar home" />
+
+  <!-- NIEUWSBRIEF -->
+  <form>
+    <legend>{footerItems[0].newsletterTitle}</legend>
+    <p>Meld u aan om onze nieuwsbrief voor al het laatste nieuws, bars en evenementen</p>
+  </form>
+
+  <!-- Navigatie -->
+  <nav>
+    <ul>
+      <h4>Navigatie</h4> <!-- moet later dynamische content zijn in contentful -->
+      {#each footerItems[0].footerLinksCollection.items as item}
+        <li>
+          <Link href={item.slug} aria-label={item.title} title={item.title}></Link>
+        </li>
+      {/each}
+    </ul>
+
+    <ul>
+      <h4>Bronnen</h4> <!-- moet later dynamische content zijn in contentful -->
+      {#each footerItems[0].footerLinksCollection.items as item} <!-- moet later andere links zijn -->
+        <li>
+          <Link href={item.slug} aria-label={item.title} title={item.title}></Link>
+        </li>
+      {/each}
+    </ul>
+
+    <ul>
+      <h4>Social</h4><!-- moet later dynamische content zijn in contentful -->
+      {#each footerItems[0].socialMediaIconsCollection.items as item}
+        <li>
+          <Link href={item.url}>
+            {item.assetCollection.items[0].title}
+
+          </Link>
+        </li>
+      {/each}
+    </ul>
+    
+  </nav>
+
+  <hr>
+
+  <!-- COPYRIGHT -->
+  <div>
+    <p><small>© 2024 WOGO Amsterdam. Alle rechten voorbehouden.</small></p>
+    <img src="" alt="nix 18">
+  </div>
+</footer>
+
 <footer class="footer">
   <div class="footer-wrapper">
     <div class="footer-logo-social">
