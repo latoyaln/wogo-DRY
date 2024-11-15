@@ -27,6 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Epilogue';
   src: url('fonts/Epilogue-VariableFont_wght.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'LuloClean';
+  src: url('fonts/Lulo\ Clean\ W01\ One\ Bold.woff2') format('woff2'),
+  url('fonts/Lulo\ Clean\ W01\ One\ Bold.woff') format('woff'),
+  url('fonts/Lulo\ Clean\ W01\ One\ Bold.ttf') format('truetype');
+}
    
 
 
@@ -50,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
   
     --txt-dark-clr: hsl(20, 31%, 10%);
     --txt-primary-clr: hsl(19.52, 100%, 75.29%);
-    --txt-secondary-clr: hsl(19.6, 100%, 80.2%);
-    --txt-tertiary-clr: hsl(21.23, 100%, 87.25%);
+    --txt-secondary-clr: rgb(255, 187, 154);
+    --txt-tertiary-clr: hsl(21, 100%, 87%);
     --txt-quaternary-clr: hsl(18.95, 100%, 92.55%);
 
     /* button colors */
