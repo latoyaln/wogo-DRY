@@ -12,6 +12,7 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 
 ### Anna-Kyra design: 
 [footer component](https://www.figma.com/community/file/1000026521402926606/style-guide-ui-kit) 
+> Meer uitleg in [project board](https://github.com/users/latoyaln/projects/7?pane=issue&itemId=86768897&issue=latoyaln%7Cwogo-DRY%7C1) 
 > Heb voor de 1e versie gekozen </br>
 <img width="701" alt="Scherm­afbeelding 2024-11-14 om 15 55 04" src="https://github.com/user-attachments/assets/ca3fea4e-e28e-4655-995e-2e6661c753f0">
 
