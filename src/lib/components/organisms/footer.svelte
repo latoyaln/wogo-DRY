@@ -37,7 +37,10 @@
       <h4>Navigatie</h4> <!-- moet later dynamische content zijn in contentful -->
       {#each footerItems[0].footerLinksCollection.items as item}
         <li>
-          <Link href={item.slug} aria-label={item.title} title={item.title}></Link>
+          <Link href={item.slug} aria-label={item.title} title={item.title} 
+          fontSize='1rem' 
+          color='var(--txt-primary-clr)' 
+          decoration='underline'></Link>
         </li>
       {/each}
     </ul>
@@ -46,7 +49,10 @@
       <h4>Bronnen</h4> <!-- moet later dynamische content zijn in contentful -->
       {#each footerItems[0].footerLinksCollection.items as item} <!-- moet later andere links zijn -->
         <li>
-          <Link href={item.slug} aria-label={item.title} title={item.title}></Link>
+          <Link href={item.slug} aria-label={item.title} title={item.title} 
+          fontSize='1rem' 
+          color='var(--txt-primary-clr)' 
+          decoration='underline'></Link>
         </li>
       {/each}
     </ul>
@@ -55,9 +61,11 @@
       <h4>Social</h4><!-- moet later dynamische content zijn in contentful -->
       {#each footerItems[0].socialMediaIconsCollection.items as item}
         <li>
-          <Link href={item.url}>
+          <Link href={item.url} 
+          fontSize='1rem' 
+          color='var(--txt-primary-clr)' 
+          decoration='underline'>
             {item.assetCollection.items[0].title}
-
           </Link>
         </li>
       {/each}
@@ -92,11 +100,12 @@
       <ul class="social-media-list" role="list" aria-label="Social links">
         {#each footerItems[0].socialMediaIconsCollection.items as item}
           <li>
-            <Link href={item.url}>
+            <Link href={item.url} decoration= "underline">
               <Image
                 src={item.assetCollection.items[0].url}
                 height="50"
                 width="50"
+                
                 alt={item.assetCollection.items[0].title}
                 loading="lazy"
               />
@@ -180,7 +189,6 @@
   }
 
   footer li {
-    padding: 1rem;
     font-size: var(--fs-md);
     text-transform: lowercase;
     list-style: none;
