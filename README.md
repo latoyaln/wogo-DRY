@@ -31,8 +31,13 @@ To create a production version of your app:
 
 ```bash
 npm run build
+
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Componenten design review
+
+[componenten (mobile menu)](https://www.figma.com/design/arBbWMslQCrT2dlf7A9PSj/WOGO?node-id=1-2&node-type=canvas&t=tKON8y3LLFThHrG7-0)
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
