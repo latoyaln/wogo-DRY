@@ -25,7 +25,7 @@
       <Button
         type="submit"
         variant="primary"
-        title="Abbonneer"
+        title="Abonneer"
         icon={ArrowRight}
         iconColor="var(--btn-primary-text-clr)"
         size="sm"
@@ -35,7 +35,7 @@
     <!-- Navigatie -->
     <nav>
       <ul>
-        <h4>Sitemap</h4> <!-- moet later dynamische content zijn in contentful -->
+        <h4>Navigatie</h4> <!-- moet later dynamische content zijn in contentful -->
         {#each footerItems[0].footerLinksCollection.items as item}
           <li>
             <Link href={item.slug} aria-label={item.title} title={item.title} 
@@ -102,6 +102,7 @@
     font-family: 'LuloClean', sans-serif;
   }
   footer {
+    width: 100%;
     padding: 2em 5vw;
     display: flex;
     flex-direction: column;
@@ -154,6 +155,10 @@
 
   ul {
     list-style: none;
+  }
+
+  ul li a {
+    background-color: var(--accent1-tertiary);
   }
 
   div {
